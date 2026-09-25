@@ -1,0 +1,663 @@
+
+/* =========================
+   DASAR HALAMAN
+   ========================= */
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #0f172a;
+    color: #e2e8f0;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   NAVIGASI
+   ========================= */
+
+nav {
+    background-color: #0f172a;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+
+    border-bottom: 1px solid #1e293b;
+}
+
+nav h2 {
+    margin: 0;
+
+    font-size: 25px;
+
+    color: #38bdf8;
+}
+
+nav ul {
+    display: flex;
+
+    gap: 30px;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #cbd5e1;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero {
+    min-height: 600px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    padding: 80px 8%;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            #1e3a8a,
+            transparent 35%
+        );
+}
+
+.hero-text {
+    width: 60%;
+}
+
+.hero-text p:first-child {
+    color: #38bdf8;
+
+    font-size: 18px;
+
+    margin-bottom: 5px;
+}
+
+.hero h1 {
+    font-size: 55px;
+
+    line-height: 1.1;
+
+    margin: 10px 0;
+
+    color: white;
+}
+
+.hero h3 {
+    font-size: 22px;
+
+    font-weight: normal;
+
+    color: #94a3b8;
+}
+
+.hero-text p {
+    color: #cbd5e1;
+
+    max-width: 600px;
+}
+
+
+/* =========================
+   FOTO PROFIL
+   ========================= */
+
+.hero-image {
+    width: 30%;
+
+    text-align: center;
+}
+
+.hero-image img {
+    width: 230px;
+    height: 230px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #38bdf8;
+
+    box-shadow:
+        0 0 30px rgba(56, 189, 248, 0.3);
+}
+
+
+/* =========================
+   BUTTON
+   ========================= */
+
+.button {
+    display: inline-block;
+
+    background-color: #38bdf8;
+
+    color: #0f172a;
+
+    padding: 12px 25px;
+
+    margin-top: 20px;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #7dd3fc;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   SECTION
+   ========================= */
+
+section {
+    padding: 80px 8%;
+}
+
+section h2 {
+    font-size: 32px;
+
+    margin-bottom: 35px;
+
+    color: white;
+}
+
+section h2::after {
+    content: "";
+
+    display: block;
+
+    width: 50px;
+    height: 3px;
+
+    background-color: #38bdf8;
+
+    margin-top: 8px;
+}   
+
+.center-title {
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-title::after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =========================
+   ABOUT
+   ========================= */
+
+#about {
+    background-color: #111827;
+}
+
+#about p {
+    max-width: 800px;
+
+    color: #94a3b8;
+}
+
+
+/* =========================
+   SKILLS
+   ========================= */
+
+#skills {
+    background-color: #0f172a;
+}
+
+.skills-container {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
+.skill {
+    background-color: #1e293b;
+
+    color: #cbd5e1;
+
+    padding: 12px 22px;
+
+    border: 1px solid #334155;
+
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+.skill:hover {
+    border-color: #38bdf8;
+
+    color: #38bdf8;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   PROJECT
+   ========================= */
+
+#projects {
+    background-color: #111827;
+}
+
+.project-container {
+    display: flex;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.project {
+    background-color: #1e293b;
+
+    width: 300px;
+
+    padding: 25px;
+
+    border: 1px solid #334155;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+
+    border-color: #38bdf8;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+    margin-top: 0;
+
+    color: white;
+}
+
+.project p {
+    color: #94a3b8;
+}
+
+
+/* =========================
+   PENGALAMAN & PENCAPAIAN
+   ========================= */
+
+#experience {
+    background-color: #0f172a;
+
+    text-align: center;
+}
+
+
+/* Kotak kategori */
+
+.category {
+    background-color: #111827;
+
+    max-width: 1000px;
+
+    margin: 40px auto;
+
+    padding: 35px;
+
+    border: 1px solid #1e293b;
+
+    border-radius: 12px;
+}
+
+.category h3 {
+    margin-bottom: 25px;
+
+    color: white;
+
+    font-size: 24px;
+}
+
+
+/* Subkategori sertifikat */
+
+.certificate-type {
+    margin-top: 35px;
+
+    margin-bottom: 20px;
+
+    color: #38bdf8;
+}
+
+
+/* Container sertifikat */
+
+.certificate-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+/* Kartu sertifikat */
+
+.certificate {
+    width: 300px;
+
+    background-color: #1e293b;
+
+    padding: 15px;
+
+    border: 1px solid #334155;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.certificate:hover {
+    transform: translateY(-5px);
+
+    border-color: #38bdf8;
+}
+
+
+/* Gambar sertifikat */
+
+.certificate img {
+    width: 100%;
+
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 6px;
+}
+
+.certificate p {
+    color: #94a3b8;
+}
+
+
+/* =========================
+   CONTACT
+   ========================= */
+
+#contact {
+    background-color: #111827;
+
+    text-align: center;
+}
+
+#contact p {
+    color: #94a3b8;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background-color: #020617;
+
+    color: #64748b;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        padding: 20px;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+
+        text-align: center;
+
+        padding: 60px 20px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+
+    .project-container {
+        justify-content: center;
+    }
+
+}
+
+
+/* =========================
+   BIODATA
+   ========================= */
+
+#biodata {
+    background-color: #111827;
+}
+
+
+/* Container biodata */
+
+.biodata-container {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+/* Kotak biodata */
+
+.biodata-item {
+    background-color: #1e293b;
+
+    padding: 20px;
+
+    border: 1px solid #334155;
+
+    border-radius: 10px;
+}
+
+.biodata-item strong {
+    color: #38bdf8;
+}
+
+.biodata-item p {
+    margin-bottom: 0;
+
+    color: #cbd5e1;
+}
+
+
+/* =========================
+   PENDIDIKAN
+   ========================= */
+
+#biodata h3 {
+    max-width: 900px;
+
+    margin: 50px auto 20px;
+
+    color: white;
+}
+
+.education {
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+.education-item {
+    background-color: #1e293b;
+
+    padding: 20px;
+
+    margin-bottom: 15px;
+
+    border-left: 4px solid #38bdf8;
+
+    border-radius: 6px;
+}
+
+.education-item h4 {
+    margin: 0;
+
+    color: white;
+}
+
+.education-item p {
+    color: #94a3b8;
+}
+
+
+/* =========================
+   GAMBAR SERTIFIKAT
+   ========================= */
+
+.certificate img {
+    cursor: pointer;
+}
+
+
+/* =========================
+   POPUP GAMBAR
+   ========================= */
+
+#image-popup {
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.85);
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 999;
+}
+
+
+/* Gambar yang diperbesar */
+
+#popup-image {
+    max-width: 90%;
+    max-height: 90%;
+
+    object-fit: contain;
+
+    border-radius: 5px;
+}
+
+
+/* Tombol X */
+
+#image-popup span {
+    position: absolute;
+
+    top: 20px;
+    right: 35px;
+
+    color: white;
+
+    font-size: 40px;
+
+    cursor: pointer;
+}
+

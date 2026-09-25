@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+
+<html lang="id">
+
+<head>
+
+```
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Profil Dewa Anggoro</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+    /* =========================
+       POPUP SERTIFIKAT
+       ========================= */
+
+    #image-popup {
+
+        display: none;
+
+        position: fixed;
+
+        z-index: 9999;
+
+        left: 0;
+        top: 0;
+
+        width: 100%;
+        height: 100%;
+
+        background: rgba(0, 0, 0, 0.85);
+
+        justify-content: center;
+        align-items: center;
+
+        padding: 20px;
+
+    }
+
+
+    #popup-image {
+
+        max-width: 90%;
+        max-height: 85vh;
+
+        object-fit: contain;
+
+        border-radius: 8px;
+
+        box-shadow: 0 0 25px rgba(255,255,255,0.2);
+
+    }
+
+
+    #image-popup .close-button {
+
+        position: absolute;
+
+        top: 20px;
+        right: 30px;
+
+        color: white;
+
+        font-size: 45px;
+
+        font-weight: bold;
+
+        cursor: pointer;
+
+        line-height: 1;
+
+        z-index: 10000;
+
+    }
+
+
+    #image-popup .close-button:hover {
+
+        opacity: 0.7;
+
+    }
+
+
+    /* =========================
+       GAMBAR SERTIFIKAT
+       ========================= */
+
+    .certificate img {
+
+        cursor: pointer;
+
+        transition: transform 0.2s ease;
+
+    }
+
+
+    .certificate img:hover {
+
+        transform: scale(1.03);
+
+    }
+
+
+    /* =========================
+       KONTAK
+       ========================= */
+
+    .contact-links {
+
+        margin-top: 20px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 10px;
+
+    }
+
+
+    .contact-links a {
+
+        text-decoration: none;
+
+    }
+
+</style>
+```
+
+</head>
+
+<body>
+
+```
+<!-- =========================
+     NAVIGASI
+     ========================= -->
+
+<nav>
+
+    <h2>Dewa</h2>
+
+    <ul>
+
+        <li><a href="#home">Home</a></li>
+
+        <li><a href="#about">Tentang Saya</a></li>
+
+        <li><a href="#biodata">Biodata</a></li>
+
+        <li><a href="#experience">Pengalaman</a></li>
+
+        <li><a href="#projects">Project</a></li>
+
+        <li><a href="#contact">Kontak</a></li>
+
+    </ul>
+
+</nav>
+
+
+
+<!-- =========================
+     HOME
+     ========================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-text">
+
+        <p>Halo, saya</p>
+
+        <h1>Dewa Anggoro Lintang Setiawan</h1>
+
+        <h3>Siswa Rekayasa Perangkat Lunak</h3>
+
+        <p>
+
+            Saya tertarik dengan pemrograman,
+            pengembangan game, IoT, dan teknologi.
+
+        </p>
+
+        <a href="#about" class="button">
+            Tentang Saya
+        </a>
+
+    </div>
+
+
+    <div class="hero-image">
+
+        <img
+            src="picture.jpeg"
+            alt="Foto Dewa Anggoro"
+        >
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     TENTANG SAYA
+     ========================= -->
+
+<section id="about">
+
+    <h2>Tentang Saya</h2>
+
+    <p>
+
+        Saya siswa SMK jurusan Rekayasa Perangkat Lunak (RPL)
+        yang memiliki ketertarikan pada dunia pemrograman dan teknologi.
+
+        <br><br>
+
+        Saya senang mempelajari bagaimana sebuah sistem bekerja,
+        membuat sesuatu dari nol, serta mencari solusi ketika
+        menghadapi masalah dalam proses pengembangan.
+
+        Bagi saya, kesalahan bukanlah akhir dari proses,
+        melainkan bagian dari pembelajaran untuk menjadi lebih baik.
+
+        <br><br>
+
+        Di luar kegiatan belajar dan pemrograman, saya juga memiliki
+        pengalaman dalam organisasi dan kepemimpinan di lingkungan sekolah.
+
+        Pengalaman tersebut membantu saya mengembangkan kemampuan
+        bekerja sama, berkomunikasi, bertanggung jawab,
+        dan mengambil keputusan.
+
+        <br><br>
+
+        Saat ini saya masih terus belajar dan mengembangkan kemampuan
+        saya di bidang teknologi.
+
+        Saya percaya bahwa setiap proyek yang dibuat adalah kesempatan
+        untuk belajar, berkembang, dan menghasilkan sesuatu
+        yang lebih baik dari sebelumnya.
+
+    </p>
+
+</section>
+
+
+
+<!-- =========================
+     BIODATA
+     ========================= -->
+
+<section id="biodata">
+
+    <h2>Biodata</h2>
+
+    <div class="biodata-container">
+
+        <div class="biodata-item">
+
+            <strong>Nama</strong>
+
+            <p>Dewa Anggoro Lintang Setiawan</p>
+
+        </div>
+
+
+        <div class="biodata-item">
+
+            <strong>Tempat, Tanggal Lahir</strong>
+
+            <p>Magetan, 8 Januari 2008</p>
+
+        </div>
+
+
+        <div class="biodata-item">
+
+            <strong>Jenis Kelamin</strong>
+
+            <p>Laki-laki</p>
+
+        </div>
+
+
+        <div class="biodata-item">
+
+            <strong>Domisili</strong>
+
+            <p>jawa timur, magetan , kec.Kawedaanan , Desa Karangrejo , dussun purwoseco, RT20 RW08</p>
+
+        </div>
+
+
+        <div class="biodata-item">
+
+            <strong>Pendidikan</strong>
+
+            <p>SMKN Takeran — Rekayasa Perangkat Lunak</p>
+
+        </div>
+
+
+        <div class="biodata-item">
+
+            <strong>Tinggi Badan</strong>
+
+            <p>165 cm</p>
+
+        </div>
+
+
+        <div class="biodata-item">
+
+            <strong>Berat Badan</strong>
+
+            <p>85 kg</p>
+
+        </div>
+
+    </div>
+
+
+
+    <h3>Riwayat Pendidikan</h3>
+
+
+    <div class="education">
+
+        <div class="education-item">
+
+            <h4>SDN Karangrejo</h4>
+
+            <p>2014 — 2020</p>
+
+        </div>
+
+
+        <div class="education-item">
+
+            <h4>SMPN 1 Kawedanan</h4>
+
+            <p>2020 — 2023</p>
+
+        </div>
+
+
+        <div class="education-item">
+
+            <h4>SMKN Takeran</h4>
+
+            <p>2024 — Sekarang</p>
+
+            <p>Rekayasa Perangkat Lunak</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     PENGALAMAN
+     ========================= -->
+
+<section id="experience">
+
+    <h2 class="center-title">
+        Pengalaman & Pencapaian
+    </h2>
+
+
+    <div class="category">
+
+        <h3>Pengalaman</h3>
+
+
+        <div class="experience-card">
+
+            <h4>Ketua OSIS</h4>
+
+            <p>SMK Negeri Takeran</p>
+
+            <p>Periode: 2025–2026</p>
+
+            <p>
+
+                Mengkoordinasikan anggota dan membantu
+                pelaksanaan kegiatan sekolah.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         SERTIFIKAT
+         ========================= -->
+
+    <div class="category">
+
+        <h3>Sertifikat</h3>
+
+
+        <h4>Kompetensi</h4>
+
+        <div class="certificate-container">
+
+            <p>Belum ada sertifikat.</p>
+
+        </div>
+
+
+        <h4>Pelatihan</h4>
+
+
+        <div class="certificate-container">
+
+
+            <div class="certificate">
+
+                <img
+                    src="dasar.png"
+                    alt="Sertifikat Pelatihan Dasar Pemrograman Web"
+                    onclick="showImage(this.src)"
+                >
+
+                <p>
+                    Pelatihan Dasar Pemrograman Web
+                </p>
+
+            </div>
+
+
+
+            <div class="certificate">
+
+                <img
+                    src="finansial.png"
+                    alt="Sertifikat Introduction to Financial Literacy"
+                    onclick="showImage(this.src)"
+                >
+
+                <p>
+                    Introduction to Financial Literacy
+                </p>
+
+            </div>
+
+
+
+            <div class="certificate">
+
+                <img
+                    src="java.png"
+                    alt="Sertifikat Belajar Dasar Pemrograman JavaScript"
+                    onclick="showImage(this.src)"
+                >
+
+                <p>
+                    Belajar Dasar Pemrograman JavaScript
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <h4>Kegiatan</h4>
+
+        <div class="certificate-container">
+
+            <p>Belum ada sertifikat / kegiatan.</p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         POPUP GAMBAR
+         ========================= -->
+
+    <div
+        id="image-popup"
+        onclick="closeImage(event)"
+    >
+
+        <span
+            class="close-button"
+            onclick="closeImage(event)"
+        >
+            &times;
+        </span>
+
+
+        <img
+            id="popup-image"
+            alt="Preview Sertifikat"
+        >
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     PROJECT
+     ========================= -->
+
+<section id="projects">
+
+    <h2>Project Saya</h2>
+
+
+    <div class="project-container">
+
+
+        <div class="project">
+
+            <h3>IoT Smoke Detector</h3>
+
+            <p>
+
+                Project pendeteksi asap berbasis ESP32
+                menggunakan beberapa sensor dan dapat
+                mengirimkan data ke dashboard.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="project">
+
+            <h3>Web Development</h3>
+
+            <p>
+
+                Mempelajari pembuatan website menggunakan
+                HTML, CSS, JavaScript, PHP,
+                dan database MySQL.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="project">
+
+            <h3>Game Development</h3>
+
+            <p>
+
+                Mempelajari pengembangan game menggunakan
+                Godot Engine.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="project">
+
+            <h3>Pembuatan APK Berbasis Web</h3>
+
+            <p>
+
+                Mempelajari pengembangan aplikasi mobile
+                berbasis web menggunakan teknologi
+                HTML, CSS, JavaScript, dan PHP.
+
+                <br><br>
+
+                Hasil project:
+
+                <br>
+
+                1. Warung Tengah Sawah :
+
+                <a
+                    href="https://warung-sawah.wuaze.com/index.php"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Link
+                </a>
+
+                <br>
+
+                2. Warung Kopi :
+
+                <a
+                    href="https://anggorolintangsetiawan-bot.github.io/aksara-kopi/Ui/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Link
+                </a>
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     KONTAK
+     ========================= -->
+
+<section id="contact">
+
+    <h2 class="center-title">
+        Kontak
+    </h2>
+
+
+    <p>
+
+        Jika ingin menghubungi saya,
+        silakan gunakan salah satu kontak berikut.
+
+    </p>
+
+
+    <div class="contact-links">
+
+        <p>
+
+            📧 Email:
+
+            <a href="mailto:anggorolintangsetiawan@gmail.com">
+
+                anggorolintangsetiawan@gmail.com
+
+            </a>
+
+        </p>
+
+
+        <p>
+
+            💼 LinkedIn:
+
+            <a
+                href="https://www.linkedin.com/in/dewa-anggoro-lintang-setiawan-0742a2400/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+
+                Profil LinkedIn Saya
+
+            </a>
+
+        </p>
+
+
+        <p>
+
+            📱 WhatsApp:
+
+            <a
+                href="https://wa.me/62895405968876"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+
+                0895-4059-68876
+
+            </a>
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+     ========================= -->
+
+<footer>
+
+    <p>
+
+        &copy; 2026 Dewa Anggoro
+
+    </p>
+
+</footer>
+
+
+
+<!-- =========================
+     JAVASCRIPT POPUP
+     ========================= -->
+
+<script>
+
+    function showImage(imageSource) {
+
+        const popup =
+            document.getElementById("image-popup");
+
+        const image =
+            document.getElementById("popup-image");
+
+
+        image.src = imageSource;
+
+        popup.style.display = "flex";
+
+        document.body.style.overflow = "hidden";
+
+    }
+
+
+
+    function closeImage(event) {
+
+        /*
+         * Jika yang diklik adalah gambar,
+         * jangan tutup popup.
+         */
+
+        if (
+            event &&
+            event.target.id === "popup-image"
+        ) {
+
+            return;
+
+        }
+
+
+        const popup =
+            document.getElementById("image-popup");
+
+
+        popup.style.display = "none";
+
+        document.body.style.overflow = "auto";
+
+    }
+
+
+
+    /*
+     * Tutup popup dengan tombol ESC
+     */
+
+    document.addEventListener(
+        "keydown",
+        function(event) {
+
+            if (event.key === "Escape") {
+
+                const popup =
+                    document.getElementById("image-popup");
+
+                popup.style.display = "none";
+
+                document.body.style.overflow = "auto";
+
+            }
+
+        }
+    );
+
+</script>
+```
+
+</body>
+
+</html>
